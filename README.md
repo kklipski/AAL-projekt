@@ -1,5 +1,4 @@
 # AAL
-
 ## O autorze
 **Imiona i nazwisko:** Kamil Krzysztof Lipski
 
