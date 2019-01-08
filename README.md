@@ -45,8 +45,11 @@ objetoscN wartoscN
 Przykładowe pliki z danymi wejściowymi: [in.txt](aal/in.txt), [in2.txt](aal/in2.txt).
 
 Wyniki działania programu są zapisywane do pliku out.txt (lub innego podanego w poleceniu aktywacji programu).
+
 Pierwszy tryb działania wypisuje największą możliwą do uzyskania wartość przedmiotów umieszczonych w walizce przy zachowaniu ograniczenia w postaci jej pojemności. Podany zostaje również zestaw umieszczonych w niej przedmiotów.
+
 W wyniku działania drugiego trybu programu wypisywane sa dodatkowo względem pierwszego wygenerowane przedmioty.
+
 Trzeci tryb działania prezentuje tabelkę, której kolumnami sa: ilość przedmiotów, czas wykonania algorytmu dla danej ilości przedmiotów (będący uśrednieniem z *r* wykonań) oraz pewna wartość *q(n)*. Dla *n* będacego medianą wszystkich problemów wartość ta wynosi 1.0, dzięki czemu jest możliwe oszacowanie trafności oceny złożonosci algorytmu (patrz: [dokumentacja koncowa](Dokumentacja koncowa.pdf)). Jesli *q(n)* przyjmuje wartości w pobliżu 1.0, oszacowanie jest poprawne.
 
 ## Metoda rozwiązania, zastosowane algorytmy i struktury danych
