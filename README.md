@@ -6,7 +6,7 @@
 
 **Adres e-mail:** 01121776@pw.edu.pl
 
-**Prowadzący:** dr inz. Tomasz Trzciński
+**Prowadzący:** dr inż. Tomasz Trzciński
 
 **Numer zadania:** 12
 
@@ -28,7 +28,7 @@ gdzie *n* - ilość przedmiotów, *mv* - pojemność walizki, *b* - maks. liczba
 ```
 aal -m3 -n1000 -mv100 -b10 -k30 -step500 -r10 >out.txt
 ```
-czyli pomiar czasu dla 30 problemów o wielkosciach 1000, 1500, 2000 itd.; dla każdej wielkosci losowanych 10 instancji problemu
+czyli pomiar czasu dla 30 problemów o wielkościach 1000, 1500, 2000 itd.; dla każdej wielkości losowanych 10 instancji problemu
 
 ## Dane wejściowe i prezentacja wyników
 Struktura pliku z danymi wejściowymi:
@@ -48,10 +48,10 @@ Pierwszy tryb działania wypisuje największą możliwą do uzyskania wartość 
 
 W wyniku działania drugiego trybu programu wypisywane sa dodatkowo względem pierwszego wygenerowane przedmioty.
 
-Trzeci tryb działania prezentuje tabelkę, której kolumnami sa: ilość przedmiotów, czas wykonania algorytmu dla danej ilości przedmiotów (będący uśrednieniem z *r* wykonań) oraz pewna wartość *q(n)*. Dla *n* będacego medianą wszystkich problemów wartość ta wynosi 1.0, dzięki czemu jest możliwe oszacowanie trafności oceny złożonosci algorytmu (patrz: [dokumentacja końcowa](Dokumentacja.pdf)). Jesli *q(n)* przyjmuje wartości w pobliżu 1.0, oszacowanie jest poprawne.
+Trzeci tryb działania prezentuje tabelkę, której kolumnami są: ilość przedmiotów, czas wykonania algorytmu dla danej ilości przedmiotów (będący uśrednieniem z *r* wykonań) oraz pewna wartość *q(n)*. Dla *n* będacego medianą wszystkich problemów wartość ta wynosi 1.0, dzięki czemu jest możliwe oszacowanie trafności oceny złożonosci algorytmu (patrz: [dokumentacja końcowa](Dokumentacja.pdf)). Jeśli *q(n)* przyjmuje wartości w pobliżu 1.0, oszacowanie jest poprawne.
 
 ## Metoda rozwiązania, zastosowane algorytmy i struktury danych
-Na potrzeby zadania została zdefiniowana struktura *dataCollection*, przechowująca dane odpowiadające danej instancji problemu. W początkowym przetwarzaniu jest ona poddawana działaniu algorytmu wykorzystującemu zliczanie kubełkowe, w celu usunięcia przedmiotów "nadmiarowych" (przedmioty danego typu, których ilość w zestawie danych przekracza narzucone ograniczenie). Następnie zostaje rozwiązana właściwa część problemu - w tym celu zostaje użyty algorytm programowania dynamicznego. W przekroju całego programu często używaną strukturą danych jest *vector*.
+Na potrzeby zadania została zdefiniowana struktura *dataCollection*, przechowująca dane odpowiadające danej instancji problemu. W początkowym przetwarzaniu jest ona poddawana działaniu algorytmu wykorzystującego zliczanie kubełkowe, w celu usunięcia przedmiotów "nadmiarowych" (przedmioty danego typu, których ilość w zestawie danych przekracza narzucone ograniczenie). Następnie zostaje rozwiązana właściwa część problemu - w tym celu zostaje użyty algorytm programowania dynamicznego. W przekroju całego programu często używaną strukturą danych jest *vector*.
 
 ## Pliki źródłowe
 Pliki nagłówkowe:
