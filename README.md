@@ -33,7 +33,7 @@ aal -m3 -n1000 -mv100 -b10 -k30 -step500 -r10 >out.txt
 czyli pomiar czasu dla 30 problemów o wielkosciach 1000, 1500, 2000 itd.; dla każdej wielkosci losowanych 10 instancji problemu
 
 ## Dane wejściowe i prezentacja wyników
-Struktura pliku z danymi wejsciowymi:
+Struktura pliku z danymi wejściowymi:
 ```
 ilosc_przedmiotow
 pojemnosc_walizki
