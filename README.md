@@ -11,7 +11,7 @@
 **Numer zadania:** 12
 
 ## Treść zadania
-Do walizki o ograniczonej pojemności *C* chcemy załadować przedmioty o jak największej wartości, mając jednak na uwadze, że każdy z nich zajmuje pewną objetość. Majac *n* przedmiotów wraz z *n*-elementową tablicą odpowiadających im wartości {*p<sub>i</sub>*} oraz objętości {*c<sub>i</sub>*}, znajdź zestaw rzeczy mieszczących się w walizce o największej sumarycznej wartości. *Uwaga:* Możemy dobierać maksymalnie *m* przedmiotów tego samego typu (tzn. tej samej wartości i tej samej objętości). Oceń złożoność algorytmu.
+Do walizki o ograniczonej pojemności *C* chcemy załadować przedmioty o jak największej wartości, mając jednak na uwadze, że każdy z nich zajmuje pewną objętość. Mając *n* przedmiotów wraz z *n*-elementową tablicą odpowiadających im wartości {*p<sub>i</sub>*} oraz objętości {*c<sub>i</sub>*}, znajdź zestaw rzeczy mieszczących się w walizce o największej sumarycznej wartości. *Uwaga:* Możemy dobierać maksymalnie *m* przedmiotów tego samego typu (tzn. tej samej wartości i tej samej objętości). Oceń złożoność algorytmu.
 
 ## Aktywacja programu
 1. Pobranie z pliku wejściowego i wyplucie do wyjściowego:
