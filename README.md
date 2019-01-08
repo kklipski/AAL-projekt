@@ -50,7 +50,7 @@ Pierwszy tryb działania wypisuje największą możliwą do uzyskania wartość 
 
 W wyniku działania drugiego trybu programu wypisywane sa dodatkowo względem pierwszego wygenerowane przedmioty.
 
-Trzeci tryb działania prezentuje tabelkę, której kolumnami sa: ilość przedmiotów, czas wykonania algorytmu dla danej ilości przedmiotów (będący uśrednieniem z *r* wykonań) oraz pewna wartość *q(n)*. Dla *n* będacego medianą wszystkich problemów wartość ta wynosi 1.0, dzięki czemu jest możliwe oszacowanie trafności oceny złożonosci algorytmu (patrz: [dokumentacja końcowa](Dokumentacja końcowa.pdf)). Jesli *q(n)* przyjmuje wartości w pobliżu 1.0, oszacowanie jest poprawne.
+Trzeci tryb działania prezentuje tabelkę, której kolumnami sa: ilość przedmiotów, czas wykonania algorytmu dla danej ilości przedmiotów (będący uśrednieniem z *r* wykonań) oraz pewna wartość *q(n)*. Dla *n* będacego medianą wszystkich problemów wartość ta wynosi 1.0, dzięki czemu jest możliwe oszacowanie trafności oceny złożonosci algorytmu (patrz: [dokumentacja końcowa](Dokumentacja.pdf)). Jesli *q(n)* przyjmuje wartości w pobliżu 1.0, oszacowanie jest poprawne.
 
 ## Metoda rozwiązania, zastosowane algorytmy i struktury danych
 Na potrzeby zadania została zdefiniowana struktura *dataCollection*, przechowująca dane odpowiadające danej instancji problemu. W początkowym przetwarzaniu jest ona poddawana działaniu algorytmu wykorzystującemu zliczanie kubełkowe, w celu usunięcia przedmiotów "nadmiarowych" (przedmioty danego typu, których ilość w zestawie danych przekracza narzucone ograniczenie). Następnie zostaje rozwiązana właściwa część problemu - w tym celu zostaje użyty algorytm programowania dynamicznego. W przekroju całego programu często używaną strukturą danych jest *vector*.
