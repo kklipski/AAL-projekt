@@ -1,6 +1,2 @@
-﻿  interface.cpp
-  main.cpp
-  algorithm.cpp
-  pch.cpp
-  Generowanie kodu...
+﻿  generator.cpp
   aal.vcxproj -> C:\Users\Kamil\Projekty\AAL\AAL\aal\Debug\aal.exe
