@@ -26,7 +26,7 @@ aal -m2 -n10 -mv100 -b2 >out.txt
 ```
 gdzie *n* - ilość przedmiotów, *mv* - pojemność walizki, *b* - maks. liczba przedmiotów tego samego typu
 
-3. Przeprowadzenie całego procesu testowania z pomiarem czasu dla rosnącego n i porównanie ze złożonoscią teoretyczną:
+3. Przeprowadzenie całego procesu testowania z pomiarem czasu dla rosnącego *n* i porównanie ze złożonoscią teoretyczną:
 ```
 aal -m3 -n1000 -mv100 -b10 -k30 -step500 -r10 >out.txt
 ```
