@@ -1,74 +1,70 @@
 # AAL
-Projekt z przedmiotu Analiza algorytm�w realizowanego przeze mnie w semestrze 18Z.
+Projekt z przedmiotu Analiza algorytmów realizowanego przeze mnie w semestrze 18Z.
 
 ## O autorze
 **Imiona i nazwisko:** Kamil Krzysztof Lipski
+
 **Numer albumu:** 283689
+
 **Adres e-mail:** 01121776@pw.edu.pl
-**Prowadzacy:** dr inz. Tomasz Trzcinski
+
+**Prowadzący:** dr inz. Tomasz Trzciński
+
 **Numer zadania:** 12
 
-## Tresc zadania
-Do walizki o ograniczonej pojemnosci *C* chcemy zaladowac przedmioty o jak najwiekszej wartosci, majac jednak na uwadze, �e ka�dy z nich zajmuje pewna objetosc. Majac *n* przedmiot�w
-wraz z *n*-elementowa tablica odpowiadajacych im wartosci {*p<sub>i</sub>*} oraz objetosci {*c<sub>i</sub>*}, znajdz zestaw rzeczy mieszczacych sie w walizce o najwiekszej sumarycznej
-wartosci. *Uwaga:* Mo�emy dobierac maksymalnie *m* przedmiot�w tego samego typu (tzn. tej samej wartosci i tej samej objetosci). Ocen zlo�onosc algorytmu.
+## Treść zadania
+Do walizki o ograniczonej pojemności *C* chcemy załadować przedmioty o jak największej wartości, mając jednak na uwadze, że każdy z nich zajmuje pewną objetość. Majac *n* przedmiotów wraz z *n*-elementową tablicą odpowiadających im wartości {*p<sub>i</sub>*} oraz objętości {*c<sub>i</sub>*}, znajdź zestaw rzeczy mieszczących się w walizce o największej sumarycznej wartości. *Uwaga:* Możemy dobierać maksymalnie *m* przedmiotów tego samego typu (tzn. tej samej wartości i tej samej objętości). Oceń złożoność algorytmu.
 
 ## Aktywacja programu
-1. Pobranie z pliku wejsciowego i wyplucie do wyjsciowego:
+1. Pobranie z pliku wejściowego i wyplucie do wyjściowego:
 ```
-*aal -m1 <in.txt >out.txt*
+aal -m1 <in.txt >out.txt
 ```
-2. Wygenerowanie instancji problemu i rozwiazanie:
+2. Wygenerowanie instancji problemu i rozwiązanie:
 ```
-*aal -m2 -n10 -mv100 -b2 >out.txt*
+aal -m2 -n10 -mv100 -b2 >out.txt
 ```
-gdzie *n* - ilosc przedmiot�w, *mv* - pojemnosc walizki, *b* - maks. liczba przedmiot�w tego samego typu
-3. Przeprowadzenie calego procesu testowania z pomiarem czasu dla rosnacego n i por�wnanie ze zlo�onoscia teoretyczna:
-```
-*aal -m3 -n1000 -mv100 -b10 -k30 -step500 -r10 >out.txt*
-```
-czyli pomiar czasu dla 30 problem�w o wielkosciach 1000, 1500, 2000 itd.; dla ka�dej wielkosci losowanych 10 instancji problemu
+gdzie *n* - ilość przedmiotów, *mv* - pojemność walizki, *b* - maks. liczba przedmiotów tego samego typu
 
-## Dane wejsciowe i prezentacja wynik�w
+3. Przeprowadzenie całego procesu testowania z pomiarem czasu dla rosnącego n i porównanie ze złożonoscią teoretyczną:
+```
+aal -m3 -n1000 -mv100 -b10 -k30 -step500 -r10 >out.txt
+```
+czyli pomiar czasu dla 30 problemów o wielkosciach 1000, 1500, 2000 itd.; dla każdej wielkosci losowanych 10 instancji problemu
+
+## Dane wejściowe i prezentacja wyników
 Struktura pliku z danymi wejsciowymi:
 ```
-*ilosc_przedmiotow*
-*pojemnosc_walizki*
-*maksymalna_liczba_przedmiotow_tego_samego_typu*
-*objetosc1 wartosc1*
-*...*
+ilosc_przedmiotow
+pojemnosc_walizki
+maksymalna_liczba_przedmiotow_tego_samego_typu
+objetosc1 wartosc1
+...
+objetoscN wartoscN
 ```
-Przykladowe pliki z danymi wejsciowymi: *[in.txt](in.txt)*, *[in2.txt](in2.txt)*.
+Przykładowe pliki z danymi wejściowymi: [in.txt](aal/in.txt), [in2.txt](aal/in2.txt).
 
-Wyniki dzialania programu sa zapisywane do pliku *out.txt* (lub innego podanego w poleceniu aktywacji programu).
-Pierwszy tryb dzialania wypisuje najwieksza mo�liwa do uzyskania wartosc przedmiot�w umieszczonych w walizce przy zachowaniu ograniczenia w postaci jej pojemnosci. Podany zostaj
-r�wnie� zestaw umieszczonych w niej przedmiot�w.
-W wyniku dzialania drugiego trybu programu wypisywane sa dodatkowo wzgledem pierwszego wygenerowane przedmioty.
-Trzeci tryb dzialania prezentuje tabelke, kt�rej kolumnami sa: ilosc przedmiot�w, czas wykonania algorytmu dla danej ilosci przedmiot�w (bedacy usrednieniem z *r* wykonan) oraz pewna
-wartosc *q(n)*. Dla n bedacego mediana wszystkich problem�w wartosc ta wynosi *1.0*, dzieki czemu jest mo�liwe oszacowanie trafnosci oceny zlo�onosci algorytmu (patrz: [dokumentacja
-koncowa] (Dokumentacja koncowa.pdf)). Jesli *q(n)* przyjmuje wartosci w pobli�u *1.0*, oszacowanie jest poprawne.
+Wyniki działania programu są zapisywane do pliku out.txt (lub innego podanego w poleceniu aktywacji programu).
+Pierwszy tryb działania wypisuje największą możliwą do uzyskania wartość przedmiotów umieszczonych w walizce przy zachowaniu ograniczenia w postaci jej pojemności. Podany zostaje również zestaw umieszczonych w niej przedmiotów.
+W wyniku działania drugiego trybu programu wypisywane sa dodatkowo względem pierwszego wygenerowane przedmioty.
+Trzeci tryb działania prezentuje tabelkę, której kolumnami sa: ilość przedmiotów, czas wykonania algorytmu dla danej ilości przedmiotów (będący uśrednieniem z *r* wykonań) oraz pewna wartość *q(n)*. Dla *n* będacego medianą wszystkich problemów wartość ta wynosi 1.0, dzięki czemu jest możliwe oszacowanie trafności oceny złożonosci algorytmu (patrz: [dokumentacja koncowa](Dokumentacja koncowa.pdf)). Jesli *q(n)* przyjmuje wartości w pobliżu 1.0, oszacowanie jest poprawne.
 
-## Metoda rozwiazania, zastosowane algorytmy i struktury danych
-Na potrzeby zadania zostala zdefiniowana struktura *dataCollection*, przechowujaca dane odpowiadajace danej instancji problemu. W poczatkowym przetwarzaniu jest ona poddawana
-dzialaniu algorytmu wykorzystujacego zliczania kubelkowego, w celu usuniecia przedmiot�w "nadmiarowych" (przedmioty danego typu, kt�rych ilosc w zestawie danych przekracza narzucone
-ograniczenie). Nastepnie zostaje rozwiazana wlasciwa czesc problemu - w tym celu zostaje u�yty algorytm programowania dynamicznego. W przekroju calego programu czesto u�ywana
-struktura danych jest *vector*.
+## Metoda rozwiązania, zastosowane algorytmy i struktury danych
+Na potrzeby zadania została zdefiniowana struktura *dataCollection*, przechowująca dane odpowiadające danej instancji problemu. W początkowym przetwarzaniu jest ona poddawana działaniu algorytmu wykorzystującemu zliczanie kubełkowe, w celu usunięcia przedmiotów "nadmiarowych" (przedmioty danego typu, których ilość w zestawie danych przekracza narzucone ograniczenie). Następnie zostaje rozwiązana właściwa część problemu - w tym celu zostaje użyty algorytm programowania dynamicznego. W przekroju całego programu często używaną strukturą danych jest *vector*.
 
-## Pliki zr�dlowe
-Pliki nagl�wkowe:
-- *[algorithm.h](aal/algorithm.h)* - algorytmy i utworzona na potrzeby programu struktura danych
-- *[generator.h](aal/generator.h)* - generator danych testowych
-- *[interface.h](aal/interface.h)* - interakcja z u�ytkownikiem
-- *[pch.h](aal/pch.h)* - plik utworzony na potrzeby tworzenia projektu w Microsoft Visual Studio 2017
+## Pliki źródłowe
+Pliki nagłówkowe:
+- [algorithm.h](aal/algorithm.h) - algorytmy i utworzona na potrzeby programu struktura danych
+- [generator.h](aal/generator.h) - generator danych testowych
+- [interface.h](aal/interface.h) - interakcja z użytkownikiem
+- [pch.h](aal/pch.h) - plik utworzony na potrzeby tworzenia projektu w Microsoft Visual Studio 2017
 
 Pliki implementacyjne:
-- *[algorithm.cpp](aal/algorithm.cpp)* - implementacja algorytm�w i metod utworzonej na potrzeby programu struktury danych
-- *[generator.cpp](aal/generator.cpp)* - implementacja generatora danych testowych
-- *[interface.cpp](aal/interface.cpp)* - implementacja metod odpowiedzielnych za interakcje z u�ytkownikiem
-- *[main.cpp](aal/main.cpp)* - podstawowy modul programu
-- *[pch.cpp](aal/pch.cpp)* - plik utworzony na potrzeby tworzenia projektu w Microsoft Visual Studio 2017
+- [algorithm.cpp](aal/algorithm.cpp) - implementacja algorytmów i metod utworzonej na potrzeby programu struktury danych
+- [generator.cpp](aal/generator.cpp) - implementacja generatora danych testowych
+- [interface.cpp](aal/interface.cpp) - implementacja metod odpowiedzielnych za interakcję z użytkownikiem
+- [main.cpp](aal/main.cpp) - podstawowy moduł programu
+- [pch.cpp](aal/pch.cpp) - plik utworzony na potrzeby tworzenia projektu w Microsoft Visual Studio 2017
 
 ## Dodatkowe informacje
-W programie na potrzeby generowania danych wprowadzono ograniczenie dotyczacej maksymalnej wartosci generowanych przedmiot�w (makro *MAX_VALUE*). Jest ono obecnie ustawione na 10000.
-Ograniczenie to jednak�e nie dotyczy u�ytkownika, kt�ry podajac wlasne dane nie jest zobligowany do jego przestrzegania. Ponadto w ka�dej chwili ta wartosc mo�e zostac zmieniona:
-wystarczy zmienic wartosc liczbowa przy *MAX_VALUE* w pliku *[pch.h](aal/pch.h)*. 
+W programie na potrzeby generowania danych wprowadzono ograniczenie dotyczące maksymalnej wartości generowanych przedmiotów (makro *MAX_VALUE*). Jest ono obecnie ustawione na 10000. Ograniczenie to jednakże nie dotyczy użytkownika, który podając własne dane nie jest zobligowany do jego przestrzegania. Ponadto w każdej chwili wartość ta może zostać zmieniona: wystarczy zmienić wartość liczbową znajdującą się przy *MAX_VALUE* w pliku [pch.h](aal/pch.h). 
