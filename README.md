@@ -1,4 +1,4 @@
-# AAL - projekt
+# AAL: projekt
 ## O autorze
 **Imiona i nazwisko:** Kamil Krzysztof Lipski
 
